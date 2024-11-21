@@ -34,7 +34,10 @@ img {
 }
 
 .content {
-    max-width: 16.44rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 32rem;
+    padding: 2rem;
 }
 
 h1 {
@@ -42,5 +45,56 @@ h1 {
     font-weight: 700;
     line-height: 1.50rem;
     letter-spacing: 0.01rem;
-    color: --very-dark-grayish-blue;
+    color: var(--very-dark-grayish-blue);
+}
+
+.copy {
+    font-family: var(--manrope);
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.01rem;
+    color: var(--destructed-dark-blue);
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+}
+
+.avatar-div{
+    align-self: flex-start;
+}
+
+.avatar{
+    border-radius: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.avatar-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.name {
+    font-family: var(--manrope);
+    font-weight: bold;
+    line-height: 1.25rem;
+    letter-spacing: 0.01rem;
+    font-size: 0.81rem;
+}
+
+.date {
+    font-family: var(--manrope);
+    color: var(--light-grayish-blue);
+    line-height: 1.25rem;
+    letter-spacing: 0.01rem;
+    font-size: 0.81rem;
+}
+
+.share-div{
+    align-self: flex-end;
 }
